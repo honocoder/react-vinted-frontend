@@ -1,68 +1,41 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Vinted Clone | Built with React
 
-## Available Scripts
+This project is a Vinted web application clone built with [React](https://fr.reactjs.org/).
 
-In the project directory, you can run:
+This project comes from the coding bootcamp I did, [Le Reacteur](https://lereacteur.io), during the React module.
 
-### `yarn start`
+## A full stack project
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This Vinted clone is **full stack**.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+A few weeks ago, we created the backend API for this Vinted clone, using **NodeJS**, **ExpressJS**, **Express Formidable** and **Cloudinary**.
+You can see [this repo](https://github.com/jimymltta/vinted-backend) to learn more about my Vinted API.
 
-### `yarn test`
+Since 6 days at the time I'm writing this README, I'm working on the front end part of the project with React.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Tools used to build the front end part of the Vinted Clone
 
-### `yarn build`
+- React - to create all the front end app basis, with **components** and **hooks**.
+- React Router DOM - to create the routing system of the app.
+- JS Cookie package - to create the cookie system used for authentication particularly.
+- Cloudinary - to give the possibility to users to upload a picture for their offers.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Screenshots
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+##### Home Page
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img width="1440" alt="Capture d’écran 2021-08-02 à 14 30 39" src="https://user-images.githubusercontent.com/84329916/127862414-2b96db4c-489f-4c51-809b-f69b4afae221.png">
 
-### `yarn eject`
+<img width="1440" alt="Capture d’écran 2021-08-02 à 14 30 53" src="https://user-images.githubusercontent.com/84329916/127862445-fd80e27a-498a-4cef-8334-a6aa1c590f37.png">
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+##### Offer Page
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<img width="1422" alt="Capture d’écran 2021-08-02 à 14 31 52" src="https://user-images.githubusercontent.com/84329916/127862508-348c96c1-47c8-4ea7-beb5-4f789f200e1d.png">
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+##### Sign up Page
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<img width="1439" alt="Capture d’écran 2021-08-02 à 14 31 05" src="https://user-images.githubusercontent.com/84329916/127862560-de7ed20f-04e1-4d8f-9f31-0bd34cbe2f3d.png">
 
-## Learn More
+##### Log in Page
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<img width="1440" alt="Capture d’écran 2021-08-02 à 14 31 15" src="https://user-images.githubusercontent.com/84329916/127862603-a2a27320-829a-4019-8ca1-147ca7337133.png">
