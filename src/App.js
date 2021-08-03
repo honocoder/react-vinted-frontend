@@ -13,12 +13,8 @@ import Offer from "./containers/Offer";
 import Signup from "./containers/Signup";
 import Login from "./containers/Login";
 import Publish from "./containers/Publish";
-import CheckoutForm from "./containers/CheckoutForm";
+import Payment from "./containers/Payment";
 
-const stripePromise = loadStripe(
-  "pk_test_51JKNh7DBzgsanfUiD0u2eVkWvQ4J6bRZDP0o4JUlFSHYuYowCd8hIlUOGAmL2G53qPru270ETTyylYbxlYqSi57a00YswXevj8"
-);
-// Routes declaration
 function App() {
   const [userToken, setUserToken] = useState(Cookies.get("userToken") || null);
   // Loading Stripe
@@ -35,6 +31,7 @@ function App() {
     }
   };
 
+  // Routes declaration
   return (
     <Router>
       <Header userToken={userToken} setUser={setUser} />
@@ -51,11 +48,9 @@ function App() {
         <Route path="/publish">
           <Publish userToken={userToken} />
         </Route>
-        <Elements stripe={stripePromise}>
-          <Route path="/payment">
-            <CheckoutForm />
-          </Route>
-        </Elements>
+        {/* <Route path="/payment">
+          <Payment userToken={userToken} />
+        </Route> */}
         <Route path="/">
           <Home />
         </Route>

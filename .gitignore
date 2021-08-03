@@ -7,6 +7,8 @@
 
 # testing
 /coverage
+Payment.js
+CheckoutForm.js
 
 # production
 /build

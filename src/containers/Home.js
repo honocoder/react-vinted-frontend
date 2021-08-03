@@ -13,7 +13,6 @@ const Home = () => {
 
   // Function to fetch through data using a useEffect
   useEffect(() => {
-    console.log("test");
     const fetchData = async () => {
       try {
         const response = await axios.get(
