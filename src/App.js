@@ -48,9 +48,9 @@ function App() {
         <Route path="/publish">
           <Publish userToken={userToken} />
         </Route>
-        {/* <Route path="/payment">
+        <Route path="/payment">
           <Payment userToken={userToken} />
-        </Route> */}
+        </Route>
         <Route path="/">
           <Home />
         </Route>
