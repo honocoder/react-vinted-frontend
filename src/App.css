@@ -1,0 +1,623 @@
+/*-------------------- GLOBAL --------------------*/
+
+/*---------- HEADER ----------*/
+.header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.header-buttons {
+  display: flex;
+  padding-right: 50px;
+}
+
+.header-buttons button {
+  background-color: #2db0ba;
+  border: none;
+  color: white;
+  margin-left: 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  height: 40px;
+}
+
+.white-btn {
+  border: 1px solid #2db0ba;
+  padding: 9px;
+  color: #2db0ba;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+  margin-right: 20px;
+  border-radius: 5px;
+  height: 20px;
+}
+
+.search {
+  width: 600px;
+  height: 40px;
+  background-color: #f5f6f7;
+  border: none;
+  border-radius: 5px;
+  margin-right: 150px;
+}
+
+.search::placeholder {
+  font-size: 16px;
+  font-family: sans-serif;
+  padding-left: 20px;
+}
+
+.search:focus {
+  outline: none;
+}
+
+/*---------- HEADER - RESPONSIVE ----------*/
+@media (max-width: 400px) {
+  .header {
+    padding-left: 10px;
+    width: 400px;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  .search {
+    width: 115px;
+    margin-left: 30px;
+  }
+}
+
+/*---------- HEADER LOGGED IN ----------*/
+.header-loggedin {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.header-loggedin-buttons {
+  display: flex;
+  padding-right: 50px;
+}
+
+.header-loggedin-buttons button {
+  background-color: #2db0ba;
+  border: none;
+  color: white;
+  margin-left: 20px;
+  border-radius: 5px;
+  font-size: 12px;
+  height: 30px;
+}
+
+.red-btn {
+  border: none;
+  padding: 8px;
+  background-color: #c2175b;
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 12px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+/*-------------------- SIGN UP PAGE --------------------*/
+
+/*---------- FORM ----------*/
+
+.signup {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup h1 {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 200;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.signup p {
+  font-family: sans-serif;
+  width: 275px;
+  font-size: 12px;
+  color: #999999;
+}
+
+.signup form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup form input {
+  width: 275px;
+  height: 30px;
+  border: none;
+  border-bottom: solid 1px pink;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+::placeholder {
+  color: #999999e1;
+}
+
+.news-input {
+  display: flex;
+}
+
+#newsletter {
+  width: 50px;
+}
+
+.news-input label {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #666666;
+  line-height: 36px;
+}
+
+.signup form button {
+  width: 275px;
+  height: 45px;
+  background-color: #2db0ba;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.signup-link {
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #2db0ba;
+  font-size: 12px;
+}
+
+/*-------------------- LOG IN PAGE --------------------*/
+.login {
+  display: flex;
+  flex-direction: column;
+}
+
+.login h1 {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 200;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.login p {
+  font-family: sans-serif;
+  width: 275px;
+  font-size: 12px;
+  color: #999999;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login form input {
+  width: 275px;
+  height: 30px;
+  border: none;
+  border-bottom: solid 1px pink;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.login form button {
+  width: 275px;
+  height: 45px;
+  background-color: #2db0ba;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: sans-serif;
+  font-size: 16px;
+  margin: 20px 0px;
+}
+
+.login-link {
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #2db0ba;
+  font-size: 12px;
+}
+
+/*-------------------- HOME PAGE --------------------*/
+
+/*---------- BODY ----------*/
+body {
+  margin: 0px;
+}
+
+/*---------- HERO ----------*/
+.hero {
+  position: relative;
+}
+
+.hero-img {
+  width: 1425px;
+  height: 455px;
+  object-fit: cover;
+}
+
+.cta {
+  width: 380px;
+  height: 270px;
+  background-color: white;
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  padding-left: 40px;
+  border-radius: 5px;
+}
+
+.cta h2 {
+  font-size: 34px;
+  font-family: sans-serif;
+  font-weight: 300;
+  padding-top: 30px;
+}
+
+.cta button {
+  background-color: #2db0ba;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/*---------- HERO - RESPONSIVE ----------*/
+@media (max-width: 400px) {
+  .hero-img {
+    width: 400px;
+  }
+
+  .cta {
+    width: 250px;
+    height: 150px;
+    top: 150px;
+    left: 50px;
+  }
+
+  .cta h2 {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+}
+
+/*---------- OFFERS LIST ----------*/
+.offers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 50px 20px;
+}
+
+.offers-link {
+  text-decoration: none;
+}
+
+.single-offer {
+  width: 235px;
+}
+
+.single-offer img {
+  height: 362px;
+  width: 235px;
+  object-fit: cover;
+}
+
+.home-offer-owner {
+  font-size: 12px;
+  color: #999999;
+}
+
+.single-offer p {
+  padding-left: 5px;
+  font-family: sans-serif;
+  line-height: 3px;
+}
+
+.price {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.size,
+.brand {
+  font-size: 12px;
+  color: #999999;
+}
+
+.brand {
+  text-transform: uppercase;
+}
+
+/*-------------------- SINGLE OFFER PAGE --------------------*/
+.single-offer-page-body {
+  background-color: #eaedee;
+  height: 700px;
+}
+
+.single-offer-page {
+  display: flex;
+  margin: 10px 175px;
+}
+
+.img-col {
+  margin-right: 200px;
+  margin-top: 20px;
+}
+
+.img-col img {
+  width: 450px;
+  height: 600px;
+  object-fit: cover;
+}
+
+.infos-col {
+  background-color: white;
+  width: 400px;
+  height: 600px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.infos-col p {
+  width: 400px;
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: 300;
+  padding-left: 20px;
+  padding-bottom: 50px;
+}
+
+.keys {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #999999;
+  padding-left: 20px;
+}
+
+.offer-values {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #666666;
+  text-transform: uppercase;
+  padding-right: 20px;
+  width: 150px;
+}
+
+.keys-values {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+.inf-bot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  margin-top: 100px;
+  border-top: 1px solid #999999;
+}
+
+.inf-bot p {
+  font-size: 16px;
+  font-family: sans-serif;
+  padding-bottom: 10px;
+  padding-left: 80px;
+  color: #666666;
+  line-height: 0px;
+}
+
+.inf-bot p:first-child {
+  font-weight: bold;
+  color: black;
+}
+
+.inf-bot p:last-child {
+  color: black;
+}
+
+.buy-btn {
+  background-color: #2db0ba;
+  border: none;
+  width: 320px;
+  height: 40px;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+/*-------------------- PUBLISH PAGE --------------------*/
+.publish {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaedee;
+}
+
+.publish h1 {
+  font-family: sans-serif;
+  font-weight: 400;
+  align-self: flex-start;
+  padding-left: 70px;
+}
+
+.publish form {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-desc-pub,
+.details-pub,
+.price-pub {
+  width: 1280px;
+  display: block;
+  /* flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  margin-bottom: 50px;
+}
+
+.pic-pub {
+  margin-bottom: 50px;
+}
+
+.publish form button {
+  margin-bottom: 30px;
+}
+
+.input-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  border-bottom: 1px #ebedee solid;
+}
+
+.input-text h4 {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+
+.input-text input {
+  width: 50%;
+  border: none;
+  border-bottom: 1px solid #ebedee;
+  color: black;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.pic-pub {
+  padding: 24px;
+  display: block;
+}
+
+.dashed {
+  border: 1px dashed #ebedee;
+  border-radius: 3px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #0ab1ba;
+  border-radius: 4px;
+  height: 45px;
+}
+
+.label-pic {
+  cursor: pointer;
+  color: #0ab1ba;
+  font-weight: 700;
+}
+
+.plus-sign {
+  font-size: 40px;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+.add-pic-text {
+  margin: 0 10px;
+  vertical-align: middle;
+  font-family: sans-serif;
+}
+
+#pic-upload {
+  display: none;
+}
+
+.price-and-checkbox {
+  width: 50%;
+  display: block;
+}
+
+.price-input {
+  margin-bottom: 40px;
+}
+
+.checkbox-input {
+  display: block;
+  font-family: sans-serif;
+}
+
+/* .checkbox-style {
+  border-radius: 5px;
+  padding: 2px 11px;
+  margin: 0 15px 0 0;
+  border: 1px black solid;
+}
+
+.checkbox-style:checked {
+  border-radius: 5px;
+  padding: 3px 6px;
+  margin: 0 15px 0 0;
+  background-color: #0ab1ba;
+} */
+
+.checkbox-input input {
+  border-radius: 5px;
+  padding: 2px 11px;
+  margin: 0 15px 0 0;
+  border: 1px black solid;
+}
+
+.checkbox-input input:checked {
+  border-radius: 5px;
+  padding: 3px 6px;
+  margin: 0 15px 0 0;
+  background-color: #0ab1ba;
+}
+
+.publish button {
+  background-color: #0ab1ba;
+  width: 78px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  align-self: flex-end;
+  margin-right: 50px;
+  color: white;
+  font-size: 16px;
+  font-weight: thin;
+}
