@@ -10,9 +10,10 @@ const CheckoutForm = ({ userToken, userId, productTitle, productPrice }) => {
 
   const clientProtectPrice = 0.8;
   const deliveryPrice = 1.6;
-  const total = (productPrice + clientProtectPrice + deliveryPrice).toFixed(2);
+  const total =
+    Number(productPrice) + Number(clientProtectPrice) + Number(deliveryPrice);
 
-  console.log(productPrice);
+  //   console.log(productPrice);
   console.log(total);
 
   const handleSubmit = async (event) => {
@@ -34,7 +35,7 @@ const CheckoutForm = ({ userToken, userId, productTitle, productPrice }) => {
         "https://vinted-rep-backend.herokuapp.com/payment",
         {
           source: stripeResponse.token.id,
-          amount: productPrice,
+          amount: total,
           title: productTitle,
         },
         {
@@ -45,11 +46,12 @@ const CheckoutForm = ({ userToken, userId, productTitle, productPrice }) => {
       );
       console.log("Server's response ===> ", response.data);
 
-      if (response.data.status === "succeeded") {
+      if (response.data) {
         setCompleted(true);
       }
     } catch (error) {
       console.log(error.message);
+      console.log(error.response);
     }
   };
 
