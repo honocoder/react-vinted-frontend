@@ -51,7 +51,12 @@ const Offer = () => {
             <p>{data.product_name}</p>
             <p>{data.product_description}</p>
             <p>{data.owner.account.username}</p>
-            <button className="buy-btn">Acheter</button>
+            <Link
+              to={{ pathname: "/payment", state: { data: data } }}
+              className="buy-btn"
+            >
+              Acheter
+            </Link>
           </div>
         </div>
       </div>
